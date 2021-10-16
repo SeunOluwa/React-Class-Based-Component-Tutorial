@@ -18,14 +18,18 @@
                 name: "Seun",
                 age: 22
             }
-            handleClick(e) {
+            handleClick = (e) => {
                 // console.log(e.target);
-                console.log(this.state.age);
+                console.log(this.state);
+                this.setState({
+                    name: "Seyi",
+                    age: 20
+                });
             }
-            handleMouseHover(e) {
-                console.log(e);
+            handleMouseHover = (e) => {
+                console.log(e.target, e.pageX);
             }
-            handleCopy(e) {
+            handleCopy = (e) => {
                 console.log('No copy me!');
             }
             render() {
